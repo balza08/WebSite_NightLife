@@ -314,89 +314,81 @@
 
       </div>
 
-    </section><!-- /Pricing Section -->
+<section id="faq" class="faq section">
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Domande frequenti</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
+        <p>Qui puoi trovare la risposta ad alcune tue domande</p>
+        <p>Se ne hai in mente altre manda una e-mail tramite il box in fondo al sito:</p>
+      </div><div class="container">
         <div class="row justify-content-center">
-
           <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
 
             <div class="faq-container">
 
               <div class="faq-item faq-active">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <h3>Come faccio a inserire il mio locale nella vostra app?</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>RISPOSTA 1</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
+              </div><div class="faq-item">
                 <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
                 <div class="faq-content">
                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
+              </div><div class="faq-item">
                 <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
                 <div class="faq-content">
                   <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
+              </div><div class="faq-item">
                 <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
                 <div class="faq-content">
                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
+              </div><div class="faq-item">
                 <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
                 <div class="faq-content">
                   <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
+              </div><div class="faq-item">
                 <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
                 <div class="faq-content">
                   <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div></div>
 
-            </div>
-
-          </div><!-- End Faq Column-->
-
-        </div>
-
+          </div></div>
       </div>
 
-    </section><!-- /Faq Section -->
-    <section id="team" class="team section">
+      <script>
+        document.querySelectorAll('.faq-item h3, .faq-toggle').forEach(element => {
+          element.addEventListener('click', () => {
+            // Trova il box FAQ genitore dell'elemento cliccato
+            const faqItem = element.closest('.faq-item');
+            
+            // Aggiunge o toglie la classe 'faq-active' per mostrare/nascondere la risposta
+            faqItem.classList.toggle('faq-active');
+          });
+        });
+      </script>
+
+    </section>
+
+</section><section id="team" class="team section">
 
       <div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
         <p>Piccola descrizione del nostro team</p>
-      </div><div class="container">
+      </div>
 
+      <div class="container">
         <div class="row gy-4">
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
@@ -414,10 +406,12 @@
                 <p>Studente di informatica, Web Developer e appassionato di CyberSecurity, mi dedico alla creazione di soluzioni digitali sicure e attente alla privacy. Coltivo la passione per l'Ethical Hacking per comprendere e difendere i sistemi, con l'obiettivo di approfondire questi studi all'università.</p>
               </div>
             </div>
-          </div><div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-img" style="aspect-ratio: 1 / 1; overflow: hidden; position: relative;">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="" style="width: 100%; height: 100%; object-fit: cover;">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -431,10 +425,12 @@
                 <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
               </div>
             </div>
-          </div><div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-img" style="aspect-ratio: 1 / 1; overflow: hidden; position: relative;">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" style="width: 100%; height: 100%; object-fit: cover;">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -448,10 +444,12 @@
                 <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
               </div>
             </div>
-          </div><div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/FotoProfilo4.jpg" class="img-fluid" alt="">
+              <div class="member-img" style="aspect-ratio: 1 / 1; overflow: hidden; position: relative;">
+                <img src="assets/img/team/FotoProfilo4.jpg" class="img-fluid" alt="" style="width: 100%; height: 100%; object-fit: cover;">
                 <div class="social">
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-tiktok"></i></a>
@@ -461,10 +459,12 @@
               <div class="member-info">
                 <h4>Night Life</h4>
                 <span>Pagina instagram</span>
-                <p>Passa il cursose sull'imagine e corri a seguirci sui nostri social</p>
+                <p>Passa il cursore sull'immagine e corri a seguirci sui nostri social</p>
               </div>
             </div>
-          </div></div>
+          </div>
+
+        </div>
       </div>
     </section>
     <!-- Contact Section -->
@@ -472,8 +472,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Contatti</h2>
+        <p>Se hai bisogno di maggiori informazioni non esitare a contattarci!! </p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -495,7 +495,7 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
+                  <h3>Telefono</h3>
                   <p>+1 5589 55488 55</p>
                   <p>+1 6678 254445 41</p>
                 </div>
@@ -504,7 +504,7 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
+                  <h3>Email</h3>
                   <p>info@example.com</p>
                   <p>contact@example.com</p>
                 </div>
@@ -513,7 +513,7 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="500">
                   <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
+                  <h3>Orari di assistenza</h3>
                   <p>Monday - Friday</p>
                   <p>9:00AM - 05:00PM</p>
                 </div>
