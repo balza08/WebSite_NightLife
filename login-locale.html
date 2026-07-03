@@ -27,68 +27,10 @@
       overflow: hidden;
     }
 
-    .nl-logo {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .nl-ring {
-      position: absolute;
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      background: linear-gradient(135deg, #3b5bff, #c03fff) border-box;
-      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: destination-out;
-      mask-composite: exclude;
-      filter: drop-shadow(0 0 18px #7b2fff) drop-shadow(0 0 36px #3b5bff);
-    }
-
-    .nl-text {
-      font-family: 'Inter', sans-serif;
-      font-size: 3rem;
-      font-weight: 800;
-      font-style: italic;
-      background: linear-gradient(135deg, #fff 30%, #c8a8ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      z-index: 1;
-      letter-spacing: -2px;
-    }
-
-    .nl-glow {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 220px;
-      height: 60px;
-      background: radial-gradient(ellipse, rgba(100,60,255,0.5) 0%, rgba(180,60,255,0.3) 40%, transparent 70%);
-      filter: blur(8px);
-    }
-
-    .nl-smoke-l {
-      position: absolute;
-      left: 60px;
-      bottom: 10px;
-      width: 100px;
-      height: 80px;
-      background: radial-gradient(ellipse, rgba(60,80,255,0.35) 0%, transparent 70%);
-      filter: blur(12px);
-    }
-
-    .nl-smoke-r {
-      position: absolute;
-      right: 60px;
-      bottom: 10px;
-      width: 100px;
-      height: 80px;
-      background: radial-gradient(ellipse, rgba(180,40,255,0.35) 0%, transparent 70%);
-      filter: blur(12px);
+    .hero-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .page {
@@ -277,13 +219,7 @@
 <body>
 
   <div class="hero-logo">
-    <div class="nl-logo">
-      <div class="nl-smoke-l"></div>
-      <div class="nl-smoke-r"></div>
-      <div class="nl-glow"></div>
-      <div class="nl-ring"></div>
-      <div class="nl-text">NL</div>
-    </div>
+    <img src="img/screenShot/LogoHome.png" alt="NightLife Logo">
   </div>
 
   <div class="page">
