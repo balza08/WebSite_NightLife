@@ -1239,3 +1239,35 @@ section, .section {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(212, 0, 255, 0.1), 0 0 40px rgba(212, 0, 255, 0.05);
 }
+
+/*--------------------------------------------------------------
+# Tariffe Token - Tabs responsive su mobile
+--------------------------------------------------------------*/
+@media (max-width: 575px) {
+  #tariffeTabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start !important;
+    padding-bottom: 4px;
+  }
+
+  #tariffeTabs .nav-item {
+    flex: 0 0 auto;
+  }
+
+  #tariffeTabs .nav-link {
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  /* nasconde la scrollbar ma resta scrollabile */
+  #tariffeTabs::-webkit-scrollbar {
+    height: 3px;
+  }
+  #tariffeTabs::-webkit-scrollbar-thumb {
+    background: rgba(212, 0, 255, 0.4);
+    border-radius: 3px;
+  }
+}
