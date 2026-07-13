@@ -1282,3 +1282,10 @@ section, .section {
     border-radius: 3px;
   }
 }
+
+@media (min-width: 992px) {
+  .hero-logo-img {
+    position: relative;
+    left: 75px;
+  }
+}
