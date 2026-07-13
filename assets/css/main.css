@@ -1300,3 +1300,12 @@ section, .section {
               0 0 15px var(--accent-secondary);
   opacity: 0.8;
 }
+
+/* Ritaglia i bordi neri in eccesso del video solo su mobile */
+@media (max-width: 991px) {
+  .custom-mobile-video {
+    height: 320px !important; /* Forza un'altezza verticale fissa */
+    object-fit: cover;        /* Zoomma e ritaglia i bordi neri per riempire lo spazio */
+    object-position: center;  /* Tiene il logo NL perfettamente al centro */
+  }
+}
