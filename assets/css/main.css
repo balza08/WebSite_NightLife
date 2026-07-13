@@ -1236,8 +1236,19 @@ section, .section {
 .tariffe-token .table-responsive {
   border: 1px solid rgba(212, 0, 255, 0.4);
   border-radius: 6px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   box-shadow: 0 0 20px rgba(212, 0, 255, 0.1), 0 0 40px rgba(212, 0, 255, 0.05);
+}
+
+/* Indicatore visivo di scroll (sfumatura a destra) quando c'è altro contenuto da vedere */
+.tariffe-token .table-responsive {
+  position: relative;
+  background-image: linear-gradient(to right, transparent, rgba(212, 0, 255, 0.12));
+  background-repeat: no-repeat;
+  background-size: 24px 100%;
+  background-position: right center;
 }
 
 /*--------------------------------------------------------------
