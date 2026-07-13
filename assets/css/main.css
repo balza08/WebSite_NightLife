@@ -1289,3 +1289,14 @@ section, .section {
     left: 75px;
   }
 }
+
+.neon-divider {
+  height: 2px;
+  width: 100%;
+  margin: 40px auto;
+  border-radius: 50px;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-secondary));
+  box-shadow: 0 0 8px var(--accent-color), 
+              0 0 15px var(--accent-secondary);
+  opacity: 0.8;
+}
