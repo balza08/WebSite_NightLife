@@ -152,12 +152,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-family: 'Alex Brush', cursive;
+  font-size: 46px;
   margin: 0;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-transform: none;
 }
 
 .header .btn-getstarted,
