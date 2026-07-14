@@ -152,8 +152,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .logo h1 {
-  font-family: 'Alex Brush', cursive;
-  font-size: 46px;
+  font-family: 'Niconne', cursive;
+  font-size: 50px;
   margin: 0;
   font-weight: 400;
   color: #ffffff;
@@ -1309,4 +1309,8 @@ section, .section {
     object-fit: cover;        /* Zoomma e ritaglia i bordi neri per riempire lo spazio */
     object-position: center;  /* Tiene il logo NL perfettamente al centro */
   }
+}
+
+.sitename {
+  font-family: 'Niconne', cursive;
 }
